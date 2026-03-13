@@ -38,7 +38,6 @@ export function Gallery({
     )
   }, [photos, searchQuery])
 
-  // Loading state
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-96">

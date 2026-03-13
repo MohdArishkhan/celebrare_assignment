@@ -22,11 +22,12 @@ export function PhotoCard({
   return (
     <div className="group relative overflow-hidden rounded-lg shadow-md transition-shadow duration-300 hover:shadow-lg">
       {/* Image Container */}
-      <div className="relative aspect-square w-full overflow-hidden bg-gray-200">
+      <div className="relative aspect-square w-full overflow-hidden bg-gray-200" style={{ position: 'relative' }}>
         <Image
           src={url}
           alt={`Photo by ${author}`}
           fill
+          priority
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />

@@ -24,7 +24,6 @@ export function useFavoritesReducer() {
   const [favorites, dispatch] = useReducer(favoritesReducer, [])
   const [isHydrated, setIsHydrated] = useReducer(() => true, false)
 
-  // Load from localStorage on mount
   useEffect(() => {
     const stored = localStorage.getItem('photoFavorites')
     if (stored) {
@@ -38,7 +37,7 @@ export function useFavoritesReducer() {
     setIsHydrated()
   }, [])
 
-  // Save to localStorage whenever favorites change
+  //I am Saving to localStorage whenever favorites change
   useEffect(() => {
     if (isHydrated) {
       localStorage.setItem('photoFavorites', JSON.stringify(favorites))
