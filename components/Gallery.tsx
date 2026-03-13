@@ -28,7 +28,7 @@ export function Gallery({
   isFavorite,
   onToggleFavorite,
 }: GalleryProps) {
-  // Filter photos based on search query using useMemo for optimization
+  // UseMemo used here as mentioned in the assignment. 
   const filteredPhotos = useMemo(() => {
     if (!searchQuery.trim()) {
       return photos
