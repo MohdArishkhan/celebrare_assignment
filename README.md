@@ -21,13 +21,13 @@ A modern photo gallery application built with Next.js that allows users to brows
 ## Installation
 
 ```bash
-pnpm install
+npm install
 ```
 
 ## Development
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
