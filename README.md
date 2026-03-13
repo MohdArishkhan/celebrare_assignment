@@ -1,5 +1,9 @@
 # Photo Gallery App
 
+## Test it Live
+
+**[https://celebrare-assignment-xi.vercel.app/](https://celebrare-assignment-xi.vercel.app/)**
+
 A modern photo gallery application built with Next.js that allows users to browse, search, and save favorite photos.
 
 ## Features
